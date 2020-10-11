@@ -21,7 +21,7 @@ import xgboost as xgb
 
 #dataset = pd.read_csv("C:/Users/admin/Desktop/python program files/Project/Data.csv", encoding='latin1' )
 
-dataset = pd.read_csv("C:/Users/admin/Desktop/python program files/Project/Data.csv", encoding='latin1' )
+dataset = pd.read_csv("Data.csv", encoding='latin1' )
 
 # Extract only required features
 
