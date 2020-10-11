@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    
+<html >
+    
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+    
+<head>
+      
+<meta charset="UTF-8">
+      
+<title> REVOLVING BALANCE </title>
+      
+<link href='https://fonts.googleapis.com/css?family=Pacifico' 
+rel='stylesheet' type='text/css'>
+    
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' 
+type='text/css'>
+    
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet'
+ type='text/css'>
+    
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' 
+rel='stylesheet' type='text/css'>
+    
+
+
+</head>
+   
+   
+<body  text='#304b5c' bgcolor= 'skyblue' >
+	
+	
+<div class="login" >
+     
+
+<center>
+   
+        
+<h1> Prediction of Total Revolving Balance </h1>
+  
+    
+<form action ='/predict'  method="post">   
+          
+Loan Amount:
+          
+<input class="form-control" type="number" name="Loan Amount" min="0" required="">
+<br><br>
+          
+		  
+Rate of Interest:
+          
+<input class="form-control" type="number" name="Rate of Interest" min="0" required="">
+		  
+<br><br>
+		  
+          
+Annual Income:
+           
+<input class="form-control" type="number" name="Annual Income" min="0" required="">
+		   
+<br><br>
+		   
+           
+Debit Income Ratio:
+           
+<input class="form-control" type="number" name="Debit Income Ratio" min="0" required="">
+		   
+\<br><br>
+		   
+           
+Number Of Credits:
+             
+<input class="form-control" type="number" name="Number of Credits" min="0" required="">
+			 
+<br><br>
+       
+             
+Total Credits:
+         
+<input class="form-control" type="number" name="Total Credits" min="0" required="">
+		 
+<br><br>
+		 
+         
+Total Recurring Income:
+       
+<input class="form-control" type="number" name="Total Recurring Income" min="0" required="">
+	   
+<br><br>
+	   
+       
+Total Current Balance:
+	   
+<input class="form-control" type="number" name="Total Current Balance" min="0" required="">
+	   
+<br><br>
+       
+         
+            
+<button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+<br><br>
+			
+   {{ prediction_test }}        
+</form>
+     
+	 
+<br>
+	 
+</br>
+  
+     
+    
+</center>
+     
+</div>
+    
+    
+    
+</body>
+	
+	
+</html>
